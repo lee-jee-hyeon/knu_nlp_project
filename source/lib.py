@@ -23,7 +23,7 @@ def text_only_korean(df:pd.DataFrame,col_name:str) -> pd.DataFrame:
     return this_df
 
 def tokenizing_without_stopwords(sentence:str,tokenizer:LTokenizer,spacer:Spacing) -> List[str]:
-    return list(map(lambda x:x not in STOP_WORDS,list(reduce(lambda acc,cur:[*acc, *cur],[spacer(i).split() for i in tokenizer(sentence)]))))
+    return list(reduce(lambda acc,cur:[*acc, *cur],[spacer(i).split() for i in tokenizer(sentence)]))
 
 def make_context(series:pd.Series) -> str:
     return ' '.join(series.to_list())
