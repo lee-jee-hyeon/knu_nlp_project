@@ -10,3 +10,8 @@
 - 2016-10-20.txt :  soynlp 토크나이저 훈련 데이터
 - train_sample : rating_train 샘플링 데이터 (40000 rows)
 - test_sample : rating_test 샘플링 데이터 (10000 rows)
+
+## Model
+
+- naver_review_classifications_pytorch_kobert.ipynb : 결과 도출 완료 *GPU 할당량 제한으로 인하여 session disconnect
+- keras감정분석.ipynb : keras를 활용한 지도학습 모델
