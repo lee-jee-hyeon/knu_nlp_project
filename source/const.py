@@ -1,0 +1,2 @@
+RANDOM_STATE = 42
+SEQUENCE_LEN = 128 # input size
