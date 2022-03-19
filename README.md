@@ -13,4 +13,5 @@
 
 ## Model
 
-- naver_review_classifications_pytorch_kobert : 결과 도출 완료, (GPU 할당량 제한으로 인하여 session disconnect)
+- naver_review_classifications_pytorch_kobert.ipynb : 결과 도출 완료 *GPU 할당량 제한으로 인하여 session disconnect
+- keras감정분석.ipynb : keras를 활용한 지도학습 모델
