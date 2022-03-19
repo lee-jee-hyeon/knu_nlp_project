@@ -8,7 +8,7 @@ from functools import reduce
 STOP_WORDS:Set[str] = set(pd.read_csv('./data/stopwords.txt',sep='\n').to_numpy().reshape(1,-1).tolist()[0])
 spacer = Spacing()
                  
-def text_only_korean(df:pd.DataFrame,col_name:str) -> pd.DataFrame:
+def preprocessing_only_korean(df:pd.DataFrame,col_name:str) -> pd.DataFrame:
     this_df = df.copy()
     
     print('\n\n전처리 전 차원 : ',this_df.shape)
