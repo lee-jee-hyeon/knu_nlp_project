@@ -1,5 +1,5 @@
 import pandas as pd
-from typing import Set
+from typing import Any, Set,List
 import numpy as np
 from soynlp.tokenizer import LTokenizer
 
@@ -20,5 +20,5 @@ def text_only_korean(df:pd.DataFrame,col_name:str) -> pd.DataFrame:
     
     return this_df
 
-def tokenizing_without_stopwords(sentence:str,tokenizer:LTokenizer):
+def tokenizing_without_stopwords(sentence:str,tokenizer:LTokenizer) -> List[Any]:
     return list(filter(lambda x:x not in STOP_WORDS,tokenizer(sentence)))
