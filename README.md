@@ -16,6 +16,7 @@
 ## Models
 
 - ANN
+- GRU
 - LSTM
 - Bi-LSTM
 - KoBERT
