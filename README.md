@@ -4,14 +4,34 @@
 
 ## Dataset
 
-- reviews_~.csv : 네이버 영화 평점 및 리뷰 크롤링 데이터
+- reviews_1647645839.csv : 네이버 영화 평점 및 리뷰 크롤링 데이터
+  - df_notk : 위의 전처리한 데이터
 - ratings*.txt : 네이버 영화 감성분석 데이터
 - stopwords.txt : 불용어 사전 [출처](https://deep.chulgil.me/hangugeo-bulyongeo-riseuteu/)
-- 2016-10-20.txt :  soynlp 토크나이저 훈련 데이터
 - train_sample : rating_train 샘플링 데이터 (40000 rows)
 - test_sample : rating_test 샘플링 데이터 (10000 rows)
 
 ## Model
 
-- naver_review_classifications_pytorch_kobert.ipynb : 결과 도출 완료 *GPU 할당량 제한으로 인하여 session disconnect
-- keras감정분석.ipynb : keras를 활용한 지도학습 모델
+- LSTM
+- Bi-LSTM
+- KoBERT
+- bert base multilingual cased model
+
+### used packages (dependancy not always)
+
+- padnas
+- numpy
+- seaborn
+- matplot
+- konlpy
+  - okt
+  - kkm
+  - khaiii
+- Spacing
+- tensorflow
+- pytorch
+- tqdm
+- transformers
+- sentencepiece
+- tensorflow_addons
